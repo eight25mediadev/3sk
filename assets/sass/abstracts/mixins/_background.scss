@@ -1,0 +1,7 @@
+//mixin for section backgrounds
+@mixin section-backgrounds( $size, $position){
+	background-repeat: no-repeat;
+	background-size: $size ;
+	background-position: $position; 
+}
+

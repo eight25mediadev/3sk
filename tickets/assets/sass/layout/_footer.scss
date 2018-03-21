@@ -1,0 +1,184 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer {
+	padding: 50px 0 61px;
+	background-image: linear-gradient(180deg, #f4f7f8 0%, #ffffff 100%);
+
+	@media(max-width: 767px){
+		padding: 40px 0;
+	}
+}
+
+/// Footer logo____________
+
+.footer-logo  {
+	display: block;
+	width: 140px;
+	height: auto;
+
+	@media(max-width: 767px){
+		margin: 0 auto;
+		width: 120px;	
+	}	
+}
+
+
+/// Footer content____________
+
+.footer-para {
+	margin: 20px 0 28px;
+	* ,
+	p {
+		color: $custom-color-6;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+	    letter-spacing: 0.14px;
+	}
+
+	@media(max-width: 767px){
+		margin: 15px 0 15px;
+		* ,
+		p { text-align: center; }
+	}
+}
+
+/// Social media links____________
+
+.social-links {
+	margin: 0 0 27px;
+	.fa-facebook { color: $fb-color; }
+	.fa-twitter { color: $twitter-color; }
+	.fa-linkedin { color: $linkedin-color; }
+	.fa-youtube-play { color: $youtube-color; }
+
+	a {
+	    margin-right: 17px;
+
+		i {
+		    font-size: 25px;
+		}
+
+		&:hover {
+			i { color: $custom-color-0; }
+		}
+
+		&:last-of-type { margin-right: 0; }
+	}
+
+	@media(max-width: 767px){
+		margin: 15px 0;
+		text-align: center; 
+	}	
+}
+
+/// Copyright text____________
+
+.copyright {
+	color: $custom-color-8;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0.1px;
+
+	@media(max-width: 767px){
+		text-align: center; 
+	}
+}
+
+/// Quick links____________
+
+.quick-links {
+    margin-top: 15px;
+
+	ul ul {
+		li {
+			width: 100%;
+			float: left;
+		}
+	}
+
+	> ul {
+		> li {
+			width: calc(100%/3);
+		    float: left;
+		    display: block;
+	        padding: 0 5px 0 5px;
+
+	        &:first-of-type {
+	    		padding-left: 0;
+		    }
+		    &:last-of-type{
+			    padding-right: 0;
+			    padding-left: 13px;
+		    }
+
+			h3 {
+				line-height: 14px;
+		        margin: 0 0 18px;
+				color: $custom-color-13;
+				font-family: $text-font-stack;
+				font-size: 14px;
+				font-weight: 600;
+			}	
+
+			@include links(14px, 400 ,  $custom-color-6 , $custom-color-13); 
+
+			a {
+				line-height: 25px;
+			    margin-bottom: 2px;
+    			display: block;
+    			letter-spacing: 0px;
+			}
+		}
+	}
+
+	@media(max-width: 767px){
+		margin-top: 0;
+		ul ul {
+			display: none;
+			li {  padding: 2px 5px; }
+		}
+		> ul {
+			> li {
+				width: 100%;
+		        padding: 0 10px;
+		        border-top: 1px solid #eee;
+
+		        &:first-of-type {
+		    		 padding: 0 10px;
+			    }
+
+			    &:last-of-type {
+				    padding: 0 10px;
+				    border-bottom:  1px solid #eee;
+			    }
+
+				h3 {
+			        margin: 0;
+				    padding: 10px 0;
+				    position: relative;
+				    cursor: pointer;
+				    &:before {
+				    	content: '+';
+				    	float: right;
+				    }
+				    &.active {
+					    &:before {
+					    	content: '--';
+				    		letter-spacing: -2px;
+					    	float: right;
+					    }
+				    }
+				}	
+
+				@include links(14px, 400 ,  $custom-color-6 , $custom-color-6); 
+
+				a {
+				    margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

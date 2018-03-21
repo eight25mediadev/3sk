@@ -1,0 +1,26 @@
+@media(max-width: 767px){
+	 body main,
+	 body footer {
+	 	position: relative;
+	 	@include transition(1s, ease, all);
+	 	left: 0;
+	 }
+	 body header {
+	 	@include transition(1s, ease, all);
+	 }
+	 body.menu-active{
+	 	overflow-x: hidden;
+	 }
+	 body.menu-active main,
+	 body.menu-active footer,
+	 body.menu-active header {
+	 	left: 241px;
+	 }
+	 body header .nav-block nav {
+	 	@include transition(1s, ease, all);
+	 }
+	body.menu-active .nav-block nav {
+		left: 0;
+	}
+
+}

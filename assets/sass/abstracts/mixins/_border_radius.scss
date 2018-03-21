@@ -1,0 +1,11 @@
+@mixin custom-border-radius($topRadius, $rightRadius, $bottomRadius, $leftRadius) {
+	border-radius:  $topRadius $rightRadius $bottomRadius $leftRadius;
+	-moz-border-radius:  $topRadius $rightRadius $bottomRadius $leftRadius;
+	-webkit-border-radius:  $topRadius $rightRadius $bottomRadius $leftRadius; 
+}
+
+@mixin border-radius($radius) {
+	border-radius:  $radius;
+	-moz-border-radius:  $radius;
+	-webkit-border-radius:  $radius;
+}

@@ -1,0 +1,38 @@
+//
+// mixin for display block types with float left
+// ________________________
+@mixin display-block-float-L(){
+	display: block;
+	width: 	 100%;
+	float:   left;
+}
+
+
+//
+// mixin for display block types with float right
+// ________________________
+@mixin display-block-float-R(){
+	display: block;
+	width: 	 100%;
+	float:   right;
+}
+
+
+//
+// mixin for display inline block types with max width
+// ________________________
+@mixin display-inline-block-mw($maxWidth){
+	display: inline-block;
+	width: 	 100%;
+	max-width: $maxWidth; 
+}
+
+
+//
+// mixin for display inline block types with custom width
+// ________________________
+@mixin display-inline-block-cw($customWidth){
+	display: inline-block;
+	width: 	 $customWidth; 
+}
+

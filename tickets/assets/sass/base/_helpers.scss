@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+
+a {
+	@include transition(0.4s , ease, all);
+	* {
+		@include transition(0.4s , ease, all);
+	}
+}
+button,
+input[type="submit"] {
+	@include transition(0.4s , ease, all);	
+}
+
+.s-icon {
+	background-image: url(../images/custom/icon-sprite.png);
+	background-repeat: no-repeat;
+}

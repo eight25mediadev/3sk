@@ -1,0 +1,35 @@
+@mixin links($font-size, $font-weight, $color, $hover-color){
+	a {
+		font-size: $font-size;
+		font-weight: $font-weight;
+		color: $color;
+		@include transition(0.4s, ease, all);
+
+		* {
+			color: $color;
+			@include transition(0.4s, ease, all);
+		}
+
+		&:focus,
+		&:active,
+		&:visited,
+		&:link { 
+			color: $color;
+			* {
+				color: $color;
+			}
+		}
+		&.active {	
+			color: $hover-color;
+			* {
+				color: $hover-color;
+			}
+		}
+		&:hover {
+			color: $hover-color;
+			* {
+				color: $hover-color;
+			}
+		}
+	}
+}

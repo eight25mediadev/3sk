@@ -1,0 +1,63 @@
+
+// mixin for links and buttons hover effects
+@mixin links-hover-effects($bg, $from, $time , $opacity){
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		background: $bg;
+		@include transition($time, ease, all);
+		opacity: $opacity;
+	}
+	@if($from == left){
+		&:after {
+			height: 100%;
+			width: 0;
+			left: 0;
+			top: 0;
+		}
+
+		&:hover:after {
+		  width: 100%;
+		}
+	}
+	@else if($from == top){
+		&:after {
+			height: 0;
+			width: 100%;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
+
+		&:hover:after {
+		  height: 100%;
+		}
+	}
+	@else if($from == right) {
+		&:after {
+			height: 100%;
+			width: 0;
+			right: 0;
+			top: 0;
+		}
+
+		&:hover:after {
+		  width: 100%;
+		}
+	}
+	@else {
+		&:after {
+			height: 0;
+			width: 100%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		&:hover:after {
+		  height: 100%;
+		}
+	}
+}

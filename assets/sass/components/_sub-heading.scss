@@ -1,0 +1,26 @@
+.sub-heading {
+	text-align: center;
+	* {	
+		margin: 0 -3px 23px 0;
+		color: $custom-color-2;
+		font-family: $text-font-stack;
+		font-size: 34px;
+		font-weight: 300;
+		line-height: 42px;
+	}	
+	&.white {
+		* {
+			color: $custom-color-1;
+		}
+	}
+	@media(max-width: 767px){
+		* {
+			margin: 0 0 15px 0;
+			font-size: 22px;
+			line-height: 30px;
+		}
+		br {
+			display: none;
+		}
+	}
+}

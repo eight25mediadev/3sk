@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@import 'mixins/border_radius';
+@import 'mixins/background';
+@import 'mixins/box-shadow';
+@import 'mixins/spacing';
+@import 'mixins/transform';
+@import 'mixins/transition';
+@import 'mixins/display-types';
+@import 'mixins/div-alignment';
+@import 'mixins/buttons-hover-effect';
+@import 'mixins/font';
+@import 'mixins/text-alignment';
+@import 'mixins/text-hidden';
+@import 'mixins/links';

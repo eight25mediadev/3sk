@@ -1,0 +1,9 @@
+@mixin text-hidden($custom-height){
+	height: $custom-height;
+	overflow: hidden;
+}
+
+@mixin text-visible(){
+	height: auto;
+	overflow: visible;
+}

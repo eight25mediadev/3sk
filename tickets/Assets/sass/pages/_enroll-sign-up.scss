@@ -1,0 +1,43 @@
+.customer-signup {
+    padding: 49px 0 52px;
+	.formsection {
+		max-width: 320px;
+		margin: 10px auto;
+
+		.choose-group {
+		    margin: 29px 0 15px;
+			input[type=checkbox] + label {
+				    margin-bottom: 14px;
+				    padding-left: 26px;
+				    max-width: 256px;
+			}
+			input[type=checkbox] + label:after,
+			input[type=checkbox] + label:before {
+			    width: 16px;
+    			height: 16px;
+			}
+			input[type=checkbox] + label:after {
+				font-size: 10px;
+    			line-height: 16px;
+			}
+			.checkbox span {
+				line-height: 14px;
+			    font-size: 12px;
+			    margin-left: 0;
+			}
+			@include links(12px, 400, $custom-color-4, $custom-color-3);
+		}
+	}
+}
+
+@media(max-width: 767px){
+	.customer-signup {
+	    padding: 35px 0 40px;
+		.formsection {
+			margin: 0 auto;
+			.choose-group {
+			    margin: 20px 0 8px;
+			}
+		}
+	}	
+}

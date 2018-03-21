@@ -1,0 +1,78 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Omnes Pro' !default;
+
+/// Muli font family
+/// @type List
+$text-font-stack-2: 'Muli', sans-serif !default;
+
+
+/// Bae colors
+/// @type Color
+$custom-color-0: #aad03d;
+$custom-color-1: #fff;
+$custom-color-2: #000;
+$custom-color-3: #21fe94;
+$custom-color-4: #05d7f0;
+$custom-color-5: #00faa5;
+$custom-color-6: #2b2f36;
+$custom-color-7: #839495;
+$custom-color-8: #8a8c91;
+$custom-color-9: #366bde;
+$custom-color-10:#00c3ff;
+$custom-color-11:#1174c8;
+$custom-color-12:#ec1e18;
+$custom-color-13: #aad03d;
+$custom-color-14:#1ccfec;
+$custom-color-15:#1a1e25;
+$custom-color-16:#bdc3c7;
+$custom-color-17:#d73924;
+$custom-color-18:#2c3e50;
+$custom-color-19:#dee1e3;
+$custom-color-20:#fbfbfc;
+$custom-color-21:#6c797a;
+$custom-color-22:#95a5a6;
+
+
+/// Social media links colors
+$fb-color: $custom-color-9;
+$twitter-color: $custom-color-10;
+$linkedin-color: $custom-color-11;
+$youtube-color: $custom-color-12;
+
+/// Social login links colors
+$fb-link-color: $custom-color-9;
+$gmail-link-color: $custom-color-17;
+$microsoft-link-color: $custom-color-18;
+
+
+/// Container's maximum width
+/// @type Length
+$large-desktop-width : 1020px;
+$small-desktop-width : 970px;
+$tab-devices-width : 750px;
+$mobilelandscape-devices-maxwidth : 500px;
+$mobileportrait-devices-maxwidth : 360px;
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
+$large-desktop-brakpoint : 1040px;
+$small-desktop-brakpoint : 992px;
+$tab-devices-brakpoint : 768px;
+$mobilelandscape-devices-brakpoint : 550px;
+$mobileportrait-devices-brakpoint : 319px;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

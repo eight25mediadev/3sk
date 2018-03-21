@@ -1,0 +1,8 @@
+.show-more-link {
+	text-align: center;
+	@include links(16px, 600 ,  $custom-color-13, $custom-color-2); 	
+	a {
+		line-height: 16px;
+		font-family: $text-font-stack;
+	}	
+}

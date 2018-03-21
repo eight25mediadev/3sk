@@ -1,0 +1,7 @@
+// mixin for dectare font
+@mixin custom-font( $font-weight, $font-size, $line-height, $font-family ){
+	font-weight: $font-weight;
+	font-size : $font-size;
+	line-height : $line-height;
+	font-family: $font-family;
+}

@@ -1,0 +1,37 @@
+.button {
+	&-blue {
+		display: block;
+	   	padding: 8px 0;
+	 	width: 100%;
+	 	@include border-radius(20px);
+	 	color: $custom-color-1;
+		font-family: $text-font-stack;
+		font-size: 16px;
+		font-weight: 600;
+	 	background-color: $custom-color-4;
+	 	text-align: center;
+	 	&:hover {
+	 		background-color: $custom-color-3;
+	 	} 
+	}
+}
+
+
+
+.btn-green {
+    border-radius: 20px;
+    background-color: #00faa5;
+    color: #1d006f;
+    font-size: 15px;
+    font-weight: 600;
+    width: 140px;
+    padding: 9px 0 7px;
+    letter-spacing: -0.5px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid transparent;
+    @include transition(0.4s , ease, all);
+    &:hover{
+        background-color: $custom-color-4;
+    }
+}
